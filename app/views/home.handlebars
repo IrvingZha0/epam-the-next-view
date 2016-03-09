@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <h1>The Next View</h1>
+  <p><strong>Welcome to The Next View</strong>. Your first task is to decide on a theme (e.g. The Next Kitten, The Next SmartPhone, The Next Cool Thing) and begin adapting the name and content accordingly. Feel free to change the header color and icons too.</p>
+  <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more</a></p>
+</div>
+<div class="row">
+	<script id="entry-template" type="text/x-handlebars-template">
+	\{{#each articles}}
+
+      <div class="col-md-4">
+  			<div class="text-left">
+        <p><img src="\{{ image }}" width="365" height="210px"></p>
+        <a href="/article/\{{ _id }}">
+  				<h3>\{{ title }}</h3>
+        </a>
+          <p class="body">\{{ body }}</p>
+          <p class="author">by: \{{ username }}</p>
+          <p class="date">\{{ date }}</p>
+  			</div>
+  		</div>
+
+	\{{/each}}
+	</script>
+</div>

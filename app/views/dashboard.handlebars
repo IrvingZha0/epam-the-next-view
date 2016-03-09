@@ -1,0 +1,25 @@
+<h2>Dashboard</h2>
+<div id="stuff">
+	<h4>Welcome <em>{{ user.name }}</em></h4>
+
+	{{#each stuff}}
+	<p>{{ greeting }} {{ subject }}</p>
+	{{/each}}
+
+	<hr>
+
+	<a class="btn btn-inverse btn-lg" href="/article/add">Add New Article</a>
+</div>
+
+<br>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Advanced TODO</h3>
+  </div>
+  <div class="panel-body">
+    <ul>
+      <li>Create a article submission page (that the above button links to or shows)</li>
+      <li>Save the contents of this to the articles.json "database" :)</li>
+    </ul>
+  </div>
+</div>
