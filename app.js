@@ -19,10 +19,10 @@ var app = express(db);
 var passport = passport();
 
 // // Use the Express application instance to listen to the '3000' port
-app.listen(1111);
+app.listen(4000);
 
 // // Log the server status to the console
-console.log('The Next View is looking good! Open http://localhost:1111 to begin.');
+console.log('The Next View is looking good! Open http://localhost:4000 to begin.');
 
 // // Use the module.exports property to expose our Express application instance for external usage
 module.exports = app;

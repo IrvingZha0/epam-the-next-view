@@ -1,1 +1,1 @@
-alert("hello world!");
+alert("welcome, please register first!");

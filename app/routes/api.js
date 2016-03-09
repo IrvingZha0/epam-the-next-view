@@ -25,7 +25,7 @@ module.exports = function(app) {
 				res.send(404, 'File not Found.');
 			}
 		});
-		
+
 	});
 
 	app.post('/api/articles', function(req, res, next) {
@@ -49,7 +49,7 @@ module.exports = function(app) {
 			}
 
 			res.redirect('/login');
-		});	
+		});
 	});
 
 };
