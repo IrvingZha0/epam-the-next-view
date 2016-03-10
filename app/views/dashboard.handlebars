@@ -2,13 +2,15 @@
 <div id="stuff">
 	<h4>Welcome <em>{{ user.name }}</em></h4>
 
-	{{#each stuff}}
-	<p>{{ greeting }} {{ subject }}</p>
-	{{/each}}
+
+  <h3><strong>{{ user.name }}</strong>
+  {{#each stuff}}
+  {{ greeting }}, {{ subject }}
+  {{/each}}</h3>
 
 	<hr>
 
-	<a class="btn btn-inverse btn-lg" href="/article/add">Add New Article</a>
+	<a class="btn btn-inverse btn-lg" href="/article/add">Add New Article Here</a>
 </div>
 
 <br>

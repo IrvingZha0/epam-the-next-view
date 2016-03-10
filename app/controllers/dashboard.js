@@ -4,8 +4,8 @@ exports.get = function(req, res) {
 
   res.render('dashboard', {
       stuff: [{
-        greeting: "Hello",
-        subject: "World!"
+        greeting: "Hi",
+        subject: "Yooooooooooooooo!"
     }],
     user: req.user
     });
