@@ -21,7 +21,7 @@ module.exports = function(db) {
 
 	// setup handlebars
 	var hbs = exphbs.create({defaultLayout: appDir + '/app/views/layouts/main'});
-	app.engine('handlebars', hbs.engine);	
+	app.engine('handlebars', hbs.engine);
 	app.set('view engine', 'handlebars');
 	app.set('views', appDir + '/app/views');
 
@@ -41,6 +41,10 @@ module.exports = function(db) {
 	app.use(function (req, res, next) {
 	  res.locals.scripts = [];
 	  next();
+
+	  if (req.user) {
+	  	res.locals.user = req.user;
+	  }
 	});
 
 	// loading the routes
