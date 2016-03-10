@@ -8,9 +8,4 @@
 module.exports = {
 	db: 'mongodb://localhost/epam-api',
 	sessionSecret: 'developmentSessionSecret',
-	facebook: {
-		clientID: 'Facebook Application ID',
-		clientSecret: 'Facebook Application Secret',
-		callbackURL: 'http://localhost:3000/oauth/facebook/callback'
-	}
 };
