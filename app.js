@@ -4,7 +4,7 @@
 // // Set the 'NODE_ENV' variable
 // process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-// // Load the module dependencies
+// // Load the module dependenciess
 var mongoose = require('./config/mongoose'),
     express = require('./config/express'),
     passport = require('./config/passport');
